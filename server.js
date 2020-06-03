@@ -9,7 +9,7 @@ const express = require("express")
 
 
     app.use('/',express.static(__dirname+"/public_static"))
-    app.listen(7007,(err)=>{
+    app.listen(process.env.PORT || 7007,(err)=>{
 
     console.log("Server Started at http://localhost:7007")
 })
