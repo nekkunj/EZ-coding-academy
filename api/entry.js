@@ -15,13 +15,25 @@ application_form_one.parentlastname=req.body.parentlast
 application_form_one.city=req.body.city
 application_form_one.email=req.body.email
 application_form_one.phone=req.body.phone
+
+application_form.findOne({email:req.body.email})
+        .then((ih)=>{
+            if(ih){
+                
+                res.redirect('/')
+            }
+            else{
+                res.redirect('/successful_details')
+            }
+        })
+
 // application_form_one.save()
 // .then(one=>{
 // console.log('Entered Successfully');
 // res.redirect('/successful_details')
 // })
-//  .catch(err=>{console.log(err)})
-res.redirect('/successful_details')
+ .catch(err=>{console.log("err")})
+
 })
 
 }
