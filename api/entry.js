@@ -21,7 +21,7 @@ application_form_one.phone=req.body.phone
 // res.redirect('/successful_details')
 // })
 //  .catch(err=>{console.log(err)})
-
+res.redirect('/successful_details')
 })
 
 }
