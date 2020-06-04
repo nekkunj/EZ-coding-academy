@@ -4,31 +4,31 @@ const mongoose=require('mongoose')
 var applicationschema=new mongoose.Schema({
     firstname:{
         type:String,
-        required:true
+        required:false
     },
     lastname:{
         type:String,
-        required:true
+        required:false
     },
     parentfirstname:{
         type:String,
-        required:true
+        required:false
     },
     parentlastname:{
         type:String,
-        required:true
+        required:false
     },
     city:{
         type:String,
-        required:true
+        required:false
     },
     email:{
         type:String,
-        required:true
+        required:false
     },
     phone:{
         type:String,
-        required:true
+        required:false
     } 
     
 
