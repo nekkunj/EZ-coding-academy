@@ -4,11 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="script.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    
+  
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
-  <script src="script.js"></script>
+
+
   <style>
       .navitems:hover{
             border-bottom: red solid 1px;
@@ -70,13 +76,13 @@ background-size: cover;
                           <a class="nav-link navlinks" href="/" style="color:white">Home <span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item navitems ">
-                          <a class="nav-link navlinks" href="/en/cross_border_health" style="color:white">Courses</a>
+                          <a class="nav-link navlinks" href="/en/cross_border_health" style="color:white">About Us</a>
                         </li>
                         <li class="nav-item navitems ">
-                          <a class="nav-link navlinks" href="/en/application" style="color:white">How to Apply</a>
+                          <a class="nav-link navlinks" href="/en/application" style="color:white">Curriculum</a>
                         </li>
                         <li class="nav-item navitems ">
-                                <a class="nav-link navlinks" href="/en/about_us" style="color:white">About Us</a>
+                                <a class="nav-link navlinks" href="/en/about_us" style="color:white">Why Us</a>
                               </li>
                               
                                   <li class="nav-item navitems ">
@@ -93,7 +99,7 @@ background-size: cover;
       </nav>
       <div class="container-fluid p-2" style="width:100%;flex-wrap: wrap;display:flex;background-image:url('https://previews.123rf.com/images/annagolant/annagolant1707/annagolant170700395/82839290-soaped-surface-abstract-simple-background-backdrop-the-subject-of-cleaning-white-light-shades-top-vi.jpg')">
         <div class="col-lg-6 animated bounceInLeft">
-        <img src="./front.jpg" alt="Best for children">
+        <img src="./front.jpg" class="animated bounce infinite" alt="Best for children">
         </div>
         <div class="col-lg-6 text-dark" style="text-align:center">
           <h1 class="text-dark" style="text-shadow: black 1px 0 5px;"><b>LEARN CODING FOR CHILDREN</b></h1>
@@ -109,9 +115,9 @@ background-size: cover;
         
       </div>
       <br>
-      
-      <div class="parent_review bg-dark carousel slide m-5" data-ride="carousel" style="text-align:center;">
-<div style="color:white">How much parents love </div>
+      <div style="color:black;text-align: center;text-shadow: black 1px 0 5px;"><h2><b>How much parents love</b></h2></div>      
+      <div id="demo" class="parent_review bg-light carousel slide m-5 p-5" data-ride="carousel" style="margin:auto;display:flex;justify-content: space-around">
+
 
       </div>
 
@@ -137,19 +143,23 @@ No matter your child’s starting point, whether your student is ready to start 
 
 <div class="container-fluid p-5 book" id="hereisbook" style="display: flex;justify-content: space-between">
 <div class="col-lg-4  p-5" style="opacity: 1;text-align: center;border-radius: 7px;background-image: linear-gradient(to bottom,#148EEE,#006699) !important">
-<form class="form-group ">
+<form action="/application_form" method="POST" class="form-group ">
   <h3 class="mb-3"><b>BOOK A DEMO</b></h3>
-  <input type="text" class="form-control " placeholder="Full Name" >
+  <input type="text" name="first" class="form-control " placeholder="First Name" >
   <br>
-  <input type="text" class="form-control" placeholder="Parent Name">
+  <input type="text" name="last" class="form-control " placeholder="Last Name" >
   <br>
-  <input type="text" class="form-control" placeholder="City or State">
+  <input type="text" name="parentfirst" class="form-control" placeholder="Parent First FName">
   <br>
-  <input type="email"  class="form-control" placeholder="Email Id">
+  <input type="text" name="parentlast" class="form-control" placeholder="Parent Last Name">
+  <br>
+  <input type="text" name="city" class="form-control" placeholder="City or State">
+  <br>
+  <input type="email" name="email" class="form-control" placeholder="Email Id">
   <br> 
-  <input type="tel" class="form-control" placeholder="Phone number">
+  <input type="tel" name="phone" class="form-control" placeholder="Phone number">
   <br>
-  <a class="btn btn-success  my-2 my-sm-0 p-3" href="/register"><b>BOOK</b></a>
+  <input type="submit" class="btn btn-success  my-2 my-sm-0 p-3" value="BOOK">
   
 </form>
 </div>
