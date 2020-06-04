@@ -15,13 +15,13 @@ var review=["The EZ Coding Academy app development course is a great experience 
         $('.carousel-indicators').append(` <li data-target="#demo"  data-slide-to="${i}"></li>`);
     }
     $('.parent_review').append(`<div class="carousel-inner col-4 p-2" style="justify-content:center">
-    <div class="carousel-item active p-3 " style="background-color: rgb(255,208,47);border-radius:10px;text-align:left">
+    <div class="carousel-item active p-3 " style="background-color: rgb(255,208,47);border-radius:10px;text-align:left;font-size:18px">
       ${review[0]}
     </div>`)
     for(var i=1;i<5;i++){
 
         $('.carousel-inner').append(`
-    <div class="carousel-item p-3 " style="background-color: rgb(255,208,47);border-radius:10px;text-align:left">
+    <div class="carousel-item p-3 " style="background-color: rgb(255,208,47);border-radius:10px;text-align:left;font-size:18px">
     ${review[i]}
     </div>`)
 
