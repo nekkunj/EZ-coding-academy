@@ -13,7 +13,12 @@ const express = require("express")
 
     require('./api/entry')(app);
 
-
+    app.use(session({
+        secret:'secret',
+        resave:true,
+        saveUninitialized:true
+    }));
+    app.use(express.static(__dirname + '/public'));
     app.use('/',express.static(__dirname+"/public_static"))
     app.use('/courses',express.static(__dirname+"/public_static/courses.html"))
 

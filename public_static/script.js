@@ -21,7 +21,7 @@ var review=["The EZ Coding Academy app development course is a great experience 
     for(var i=1;i<5;i++){
 
         $('.carousel-inner').append(`
-    <div class="carousel-item p-3 " style="background-color: rgb(255,208,47);border-radius:10px;text-align:left;font-size:18px">
+    <div class="carousel-item p-3 " style="background-color: rgb(255,208,47);border-radius:10px;text-align:left;font-size:18pxg">
     ${review[i]}
     </div>`)
 
