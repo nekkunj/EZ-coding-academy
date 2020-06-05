@@ -26,6 +26,7 @@ const express = require("express")
     app.use('/curriculum/app_inventor_level_1',express.static(__dirname+"/public_static/courses/app_inventor_level_one.html"))
 
     app.use('/successful_details',express.static(__dirname+"/public_static/successful_details.html"))
+    app.use('/about_us',express.static(__dirname+"/public_static/aboutus.html"))
 
 
     app.listen(process.env.PORT || 7007,(err)=>{
