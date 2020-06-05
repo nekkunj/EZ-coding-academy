@@ -9,7 +9,7 @@ app.post('/application_form',(req,res)=>{
 console.log(req.body);
 application_form_one=new application_form();
 application_form_one.firstname=req.body.first;
-application_form_one.lastname=req.body.last
+application_form_one.age=req.body.age
 application_form_one.parentfirstname=req.body.parentfirst
 application_form_one.parentlastname=req.body.parentlast
 application_form_one.city=req.body.city

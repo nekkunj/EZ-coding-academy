@@ -6,7 +6,7 @@ var applicationschema=new mongoose.Schema({
         type:String,
         required:false
     },
-    lastname:{
+    age:{
         type:String,
         required:false
     },
