@@ -18,9 +18,12 @@ const express = require("express")
         resave:true,
         saveUninitialized:true
     }));
+    
     app.use(express.static(__dirname + '/public'));
     app.use('/',express.static(__dirname+"/public_static"))
-    app.use('/courses',express.static(__dirname+"/public_static/courses.html"))
+    app.use('/curriculum',express.static(__dirname+"/public_static/listofcourses.html"))
+    app.use('/curriculum/scratch_level_1',express.static(__dirname+"/public_static/courses/scratch_level_one.html"))
+    app.use('/curriculum/app_inventor_level_1',express.static(__dirname+"/public_static/courses/app_inventor_level_one.html"))
 
     app.use('/successful_details',express.static(__dirname+"/public_static/successful_details.html"))
 
