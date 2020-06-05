@@ -1,6 +1,6 @@
 const mongoose=require('mongoose')
 const application_form=mongoose.model('application')
-
+const contact=mongoose.model('contactus')
 module.exports=function(app){
 
 
@@ -37,5 +37,23 @@ res.redirect('/successful_details')
  .catch(err=>{console.log("err")})
 
 })
+
+app.post('/contact-us',(req,res)=>{
+contact_one=new contact();
+
+contact_one.name=req.body.name
+contact_one.email=req.body.email
+contact_one.phone=req.body.phone
+contact_one.message=req.body.message
+contact_one.save()
+.then(one=>{
+    res.redirect('/contact-us')
+})
+.catch(err=>{console.log("err")})
+
+
+})
+
+
 
 }

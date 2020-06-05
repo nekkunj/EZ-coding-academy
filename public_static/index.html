@@ -35,36 +35,51 @@
   
         }
         .navlinks{
-    color:red;
+    
   
     
     font-size: 20px;   
 }
 .navitems:hover{
     border-bottom: red solid 1px;
+    color:red;
 }
-        .book{
-          background-image: url('https://c8.alamy.com/comp/RBR632/mature-female-teacher-teaching-girl-on-laptop-with-books-on-desk-RBR632.jpg');
-
-        }
+        
         .abcd{
-          background-image: url("download.jpg");
-          max-height: 50%;
-max-width: 50%;
-/* Center and scale the image nicely */
+          background-image: url("9.jpg");
+          
+
 background-position: center;
 background-repeat: no-repeat;
 background-size: cover;
 
         }
-        .ez-nav{
+        .ez-nav,.rev{
           background-image: url("12.jpg");
           background-position: center;
 background-repeat: no-repeat;
 background-size: cover;
         }
+        .rev{
+          background-image: linear-gradient(to bottom,rgb(221, 78, 78),rgb(148, 57, 57)) !important;
+          
+          /* background-position: center;
+background-repeat: no-repeat;
+background-size: cover; */
+        }
+        .book{
+          background-image: url("12.jpg");
+          background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+
+        }
         .learnop:hover{
           color:blue;
+          
+        }
+        .learnop{
+          color:white;
         }
         /* #logo{
             display: block;
@@ -80,7 +95,7 @@ background-size: cover;
 </head>
 <body>
     <div class="ez-nav">
-    <nav class="navbar navbar-expand-lg " style="">
+    <nav class="navbar navbar-expand-lg navbar-light" style="text-shadow: white 1px 0 10px;">
         <a class="navbar-brand" id="logo" href="/"><img src="./logo.PNG" alt="" title="" width="100" height="100">
         
         </a>
@@ -100,7 +115,7 @@ background-size: cover;
                           <a class="nav-link navlinks" href="/curriculum" style="color:white">Curriculum</a>
                         </li>
                         <li class="nav-item navitems ">
-                                <a class="nav-link navlinks" href="/why_EZ-coding_Academy" style="color:white">Why Us</a>
+                                <a class="nav-link navlinks" href="/why-EZ-coding-Academy" style="color:white">Why Us</a>
                               </li>
                               
                                   <li class="nav-item navitems ">
@@ -117,31 +132,33 @@ background-size: cover;
       </nav>
       <div class="container-fluid p-2" style="width:100%;flex-wrap: wrap; justify-content: space-around;display:flex;">
         
-        <div class="col-lg-6 text-white learnop" style="text-align:center">
-          <h1 class="text-white" style="text-shadow: white 1px 0 10px;"><b>LEARN EZ CODING FOR CHILDREN</b></h1>
+        <div class="col-lg-6  " style="text-align:center">
+          <h1 class="text-danger learnop" style="text-shadow: lightcoral 1px 0 10px;"><b>LEARN EZ CODING FOR CHILDREN</b></h1>
           <br>
-          <h2>Be a Part of EZ Coding Academy Platform</h2>
+          <h2 class="learnop">Be a Part of EZ Coding Academy Platform</h2>
           <br>
-          <h3 class="p-3">
+          <h3 class="p-3  learnop">
             Give your child wings to fly
             <br> and they will surely touch the sky 
           </h3>
           <br><br>
-          <a class="btn btn-success my-2 my-sm-0 p-3" href="#hereisbook"><b>REGISTER AS A STUDENT</b></a>
+          <a class="btn btn-success my-2 my-sm-0 p-3 learnop" style="border-radius:10px;" href="#hereisbook"><b class="p-2">REGISTER AS A STUDENT</b></a>
         </div >
         
       </div>
+      <br><br>
     </div>
-      <br>
-      <div style="color:black;text-align: center;text-shadow: black 1px 0 5px;"><h2><b>How much parents love</b></h2></div>      
-      <div id="demo" class="parent_review  carousel slide m-5 p-5" data-ride="carousel" style="background-image:linear-gradient(to bottom,rgb(141, 233, 187),rgb(98, 233, 170)) !important;;margin:auto;display:flex;justify-content: space-around">
+      
+      <div class="rev mt-0">
+      <div class="mt-2" style="color:black;text-align: center;text-shadow: black 1px 0 5px;"><h2><b>How much parents love</b></h2></div>      
+      <div id="demo" class="container-fluid m-2  parent_review  carousel slide" data-ride="carousel" style="display: flex;justify-content: space-around">
+</div>
 
-
-      </div>
-
-      <div class="why_join m-5  container p-5" style="display:flex;">
+      
+    </div>
+      <div class="why_join  container-fluid p-5 " style="display:flex;flex-wrap: wrap;justify-content: space-around;background-image: linear-gradient(to bottom,rgb(241, 230, 198),rgb(233, 224, 145)) !important;">
         
-        <div class="bg-light col-lg-6    p-2" style="border-radius:5px;flex-wrap:wrap;font-size: 18px;OPACITY:0.7">
+        <div class="bg-light col-lg-4  col-md-8 col-12 p-2" style="border-radius:15px;font-size: 18px;">
         <h3 align="center">Why to join</h3>
        
 EZ Coding academy is an investment in your child's future. Whether they're 7, 13 or midway we've perfected the system to guide them from total beginner to coder.
@@ -153,14 +170,14 @@ No matter your child’s starting point, whether your student is ready to start 
 
       </div>
 
-      <div class="col-lg-6  m-5 bg-light abcd " >
+      <div class="col-lg-4  abcd col-md-8 col-12" style="border-radius:15px;">
         
       </div>
 </div>
 
 
-<div class="container-fluid p-5 book" id="hereisbook" style="display: flex;justify-content: space-between">
-<div class="col-lg-4  p-5" style="opacity: 1;text-align: center;border-radius: 7px;background-image: linear-gradient(to bottom,#148EEE,#006699) !important">
+<div class="container-fluid p-5 book" id="hereisbook" style="display: flex;justify-content: space-between;flex-wrap: wrap">
+<div class="col-lg-4 my-2 col-md-8 col-12 p-5" style="opacity: 1;text-align: center;border-radius: 7px;background-image: linear-gradient(to bottom,#148EEE,#006699) !important">
 <form action="/application_form" method="POST" class="form-group ">
   <h3 class="mb-3"><b>BOOK A DEMO</b></h3>
   <input type="text" name="first" id="first" class="form-control " placeholder="Student Name" >
@@ -181,7 +198,7 @@ No matter your child’s starting point, whether your student is ready to start 
   
 </form>
 </div>
-<div class="col-lg-4 p-2 bg-light " style="border:black 1px solid;border-radius:10px;opacity:0.7">
+<div class="col-lg-4 my-2 col-md-8 col-12 p-2 bg-light " style="border:black 1px solid;border-radius:10px;opacity:0.7">
 <span style="font-size:18px" >EZ Coding Academy was created to solve
 the #1 gap in the global school system today.
 Today, in the computer age, less than 1% of schools teach coding in early childhood. Result, a major gap in the requirements of the new world and our children’s skills.
@@ -194,15 +211,15 @@ All classes are taught Live 1:1 Online in the comfort of your home.
 </span>
 </div>
 </div>
-<br>
+
 <div style="background-image: linear-gradient(to bottom,rgb(134, 71, 7),rgb(73, 41, 9)) !important; color:white;text-align:center">
-    <br><br><br>
+    <br><br>
     <span style="text-align:center">
     <a class="btn text-white" href="/">Home</a> |
     <a class="btn text-white" href="/about_us">About Us</a> |
     <a class="btn text-white"  href="/curriculum">Curriculum</a> | 
     <a class="btn text-white" href="/why-EZ-coding-Academy">Why Us</a> |
-    <a class="btn text-white" href="">Contact Us</a>
+    <a class="btn text-white" href="/contact-us">Contact Us</a>
     </span>
     <br><br>
             © EZ Coding Academy. |

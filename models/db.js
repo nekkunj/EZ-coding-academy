@@ -7,4 +7,6 @@ mongoose.connect(db,{useNewUrlParser:true},(err)=>{
 
 
 require('./application.model')
+require('./contactus.model')
+
 
