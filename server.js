@@ -31,6 +31,7 @@ const express = require("express")
 
     app.use('/contact-us',express.static(__dirname+"/public_static/contact_us.html"))
     app.use('/sitemap.xml',express.static(__dirname+"/public_static/sitemap.xml"))
+    app.use('/2281016_9.xml',express.static(__dirname+"/public_static/2281016_9.xml"))
 
     app.listen(process.env.PORT || 7007,(err)=>{
 
