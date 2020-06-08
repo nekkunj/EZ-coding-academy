@@ -30,6 +30,7 @@ const express = require("express")
     app.use('/why-EZ-coding-Academy',express.static(__dirname+"/public_static/whyus.html"))
 
     app.use('/contact-us',express.static(__dirname+"/public_static/contact_us.html"))
+    app.use('/sitemap.xml',express.static(__dirname+"/sitemap.xml"))
 
     app.listen(process.env.PORT || 7007,(err)=>{
 
